@@ -462,3 +462,45 @@ ALTER SEQUENCE EMAIL_ID_SEQ RESTART WITH 1 [90036-232]
 2025-01-04 17:58:58.998643-05:00 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE FROM EMAIL WHERE ID = 39[*],40,41"; SQL statement:
 DELETE FROM EMAIL WHERE ID = 39,40,41 [42000-232]
+2025-01-06 14:06:33.305923-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (660)"; SQL statement:
+insert into email (body,receiver,sender,sent_date,status,subject,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-01-06 14:08:21.746752-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE email [*]MODIFY body VARCHAR(1000)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE email MODIFY body VARCHAR(1000) [42001-232]
+2025-01-06 14:49:59.599146-05:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "SUBJECT CHARACTER VARYING(255)": "'windows were boarded up, but it still held a certain charm. Locals whispered st... (492)"; SQL statement:
+insert into email (body,receiver,sender,sent_date,status,subject,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-01-06 14:53:08.888385-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (868)"; SQL statement:
+insert into email (body,receiver,sender,sent_date,status,subject,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-01-06 14:56:29.742800-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (868)"; SQL statement:
+insert into email (body,receiver,sender,sent_date,status,subject,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-01-06 14:56:56.701634-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (868)"; SQL statement:
+insert into email (body,receiver,sender,sent_date,status,subject,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-01-06 15:05:14.550000-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (868)"; SQL statement:
+INSERT INTO "PUBLIC"."EMAIL_COPY_3_0"("ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT") OVERRIDING SYSTEM VALUE SELECT "ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT" FROM "PUBLIC"."EMAIL" [22001-232]
+2025-01-06 15:06:14.852554-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "SUBJECT CHARACTER VARYING(255)": "'windows were boarded up, but it still held a certain charm. Locals whispered st... (492)"; SQL statement:
+insert into email (body,receiver,sender,sent_date,status,subject,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-01-06 15:13:43.816444-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "SUBJECT CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (598)"; SQL statement:
+insert into email (body,receiver,sender,sent_date,status,subject,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-01-06 15:14:49.639050-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (868)"; SQL statement:
+INSERT INTO "PUBLIC"."EMAIL_COPY_3_0"("ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT") OVERRIDING SYSTEM VALUE SELECT "ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT" FROM "PUBLIC"."EMAIL" [22001-232]
+2025-01-06 15:15:01.972348-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "SUBJECT CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (598)"; SQL statement:
+insert into email (body,receiver,sender,sent_date,status,subject,id) values (?,?,?,?,?,?,default) [22001-232]
+2025-01-06 15:16:03.633496-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (868)"; SQL statement:
+INSERT INTO "PUBLIC"."EMAIL_COPY_3_0"("ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT") OVERRIDING SYSTEM VALUE SELECT "ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT" FROM "PUBLIC"."EMAIL" [22001-232]
+2025-01-06 15:38:19.723582-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (868)"; SQL statement:
+INSERT INTO "PUBLIC"."EMAIL_COPY_3_0"("ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT") OVERRIDING SYSTEM VALUE SELECT "ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT" FROM "PUBLIC"."EMAIL" [22001-232]
+2025-01-06 15:38:49.282267-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "'The old house stood on a hill overlooking the town. Its paint was peeling, and ... (868)"; SQL statement:
+INSERT INTO "PUBLIC"."EMAIL_COPY_3_0"("ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT") OVERRIDING SYSTEM VALUE SELECT "ID", "BODY", "RECEIVER", "SENDER", "SENT_DATE", "STATUS", "SUBJECT" FROM "PUBLIC"."EMAIL" [22001-232]

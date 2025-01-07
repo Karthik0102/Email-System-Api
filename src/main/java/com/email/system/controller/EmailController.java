@@ -26,7 +26,7 @@ public class EmailController {
 	@PostMapping("/send")
 	public ResponseEntity<String> sendEmail(@RequestBody EmailDto emailDto) {
 		String sendEmail = emailService.sendEmail(emailDto);
-		if (sendEmail.contains("Successfully")) {
+		if (sendEmail.contains("successfully")) {
 			return new ResponseEntity<>(sendEmail, HttpStatus.CREATED);
 		} else {
 			return new ResponseEntity<>(sendEmail, HttpStatus.BAD_REQUEST);
