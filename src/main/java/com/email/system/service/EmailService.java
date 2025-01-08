@@ -73,6 +73,7 @@ public class EmailService {
 //	}
 
 	@Transactional(rollbackFor = Exception.class) // Ensures rollback for all exceptions
+	
 	public String sendEmail(EmailDto emailDto) {
 		// Validate input
 		if (emailDto == null) {
